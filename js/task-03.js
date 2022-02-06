@@ -12,3 +12,11 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const makeGalleryItem = ({ url, alt }) => {
+  return
+  <li>
+    <img>
+    </img>
+  </li>
+}
