@@ -14,9 +14,16 @@ const images = [
 ];
 
 const makeGalleryItem = ({ url, alt }) => {
-  return
-  <li>
-    <img>
-    </img>
-  </li>
-}
+  return `
+  <li class="gallery__item">
+    <img
+      src="${url}"
+      alt="${alt}"
+    />
+  </li> `;
+};
+const gallery = document.querySelector(".gallery");
+const makeGallery = images.map(makeGalleryItem).join('');
+console.log(makeGallery);
+
+gallery.insertAdjacentHTML('beforeend', makeGallery);
